@@ -97,3 +97,6 @@ a:hover {
 #weather-description {
   font-weight: 400;
 }
+#bottom-header {
+  font-size: 1rem;
+}
