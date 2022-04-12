@@ -1,0 +1,99 @@
+h1,
+h4 {
+  text-align: center;
+}
+p {
+  font-weight: bold;
+  font-size: 15pt;
+  font-style: italic;
+}
+span {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container {
+  display: block;
+}
+.row {
+  padding: 15px;
+}
+.main {
+  text-align: center;
+  display: block;
+  margin: 25px;
+  padding: auto;
+  font-size: 75px;
+}
+.search-bar {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 15px;
+  border-width: px;
+  border-color: grey;
+}
+.card {
+  border-width: 2px;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.card-body {
+  display: block;
+}
+.icon {
+  padding: 10px;
+  font-size: 20pt;
+}
+
+.degrees {
+  font-size: 15px;
+  display: inline;
+}
+a {
+  color: #1a72e8;
+}
+a:hover {
+  color: #fdd153;
+}
+.temperature {
+  font-size: 25px;
+  text-align: center;
+}
+.units {
+  font-size: 15px;
+}
+.rightBlockResults {
+  display: inline;
+  font-weight: 15px;
+}
+#now-temperature {
+  display: block;
+  text-align: center;
+}
+#weather-symbol {
+  text-align: center;
+}
+#main-weather-symbol {
+  display: block;
+  font-size: 50px;
+  text-align: center;
+}
+#right-block {
+  display: block;
+  padding: 0px 20px;
+  text-align: right;
+}
+#days {
+  text-align: center;
+}
+#current-button {
+  padding: 6px 60px;
+}
+#main-info-block {
+  padding: 30px;
+}
+#weather-description {
+  font-weight: 400;
+}
