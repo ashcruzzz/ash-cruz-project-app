@@ -1,6 +1,8 @@
-h1,
+h1 {
+  text-align: left;
+}
 h4 {
-  text-align: center;
+  font-weight: 300;
 }
 p {
   font-weight: bold;
@@ -15,6 +17,7 @@ span {
 
 .container {
   display: block;
+  max-width: 1000px;
 }
 .row {
   padding: 15px;
@@ -46,7 +49,14 @@ span {
   padding: 10px;
   font-size: 20pt;
 }
-
+.current {
+  background-color: green;
+  border-color: green;
+}
+.current:hover {
+  background-color: #035903;
+  border-color: #035903;
+}
 .degrees {
   font-size: 15px;
   display: inline;
@@ -58,7 +68,7 @@ a:hover {
   color: #fdd153;
 }
 .temperature {
-  font-size: 25px;
+  font-size: 75px;
   text-align: center;
 }
 .units {
@@ -70,13 +80,13 @@ a:hover {
 }
 #now-temperature {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 #weather-symbol {
   text-align: center;
 }
 #main-weather-symbol {
-  display: block;
+  display: inline;
   font-size: 50px;
   text-align: center;
 }
@@ -95,8 +105,13 @@ a:hover {
   padding: 30px;
 }
 #weather-description {
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 15pt;
 }
 #bottom-header {
   font-size: 1rem;
+  margin: 0px 250px;
+}
+#left-block {
+  text-align: left;
 }
