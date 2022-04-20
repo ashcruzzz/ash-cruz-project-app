@@ -97,6 +97,7 @@ a:hover {
 }
 #days {
   text-align: center;
+  max-width: 950px;
 }
 #current-button {
   padding: 6px 60px;
