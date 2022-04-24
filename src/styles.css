@@ -152,3 +152,6 @@ a:hover {
 #left-block {
   text-align: left;
 }
+#date {
+  display: inline;
+}
