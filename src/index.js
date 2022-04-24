@@ -55,7 +55,29 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Las Vegas");
+function farenheightChange(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let farenheightTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(farenheightTemperature);
+}
+
+function celciusChange(event) {
+  event.preventDefault();
+  let celciusTemperature = Math.round((75 - 32) * (5 / 9));
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celciusTemperature;
+}
+
+//(0°C × 9/5) + 32 ---- celcius to farenheight equation
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let farenheight = document.querySelector("#farenheight-link");
+farenheight.addEventListener("click", farenheightChange);
+
+let celcius = document.querySelector("#celcius-link");
+celcius.addEventListener("click", celciusChange);
+
+search("Las Vegas");
