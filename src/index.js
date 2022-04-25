@@ -30,6 +30,9 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -55,29 +58,33 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function farenheightChange(event) {
+function fahrenheitChange(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let farenheightTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farenheightTemperature);
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
 }
 
-function celciusChange(event) {
+function celsiusChange(event) {
   event.preventDefault();
-  let celciusTemperature = Math.round((75 - 32) * (5 / 9));
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = celciusTemperature;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
 }
 
-//(0°C × 9/5) + 32 ---- celcius to farenheight equation
+let celsiusTemperature = null;
+//(0°C × 9/5) + 32 ---- celsius to fahrenheit equation
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let farenheight = document.querySelector("#farenheight-link");
-farenheight.addEventListener("click", farenheightChange);
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", fahrenheitChange);
 
-let celcius = document.querySelector("#celcius-link");
-celcius.addEventListener("click", celciusChange);
+let celsius = document.querySelector("#celsius-link");
+celsius.addEventListener("click", celsiusChange);
 
 search("Las Vegas");

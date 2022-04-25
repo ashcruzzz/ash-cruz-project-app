@@ -93,11 +93,13 @@ span {
   font-size: 15px;
   display: inline;
 }
-a {
-  color: #1a72e8;
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
-a:hover {
-  color: #fdd153;
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 .temperature {
   font-size: 75px;
