@@ -28,7 +28,7 @@
         <div class="card">
           <form id="search-form">
             <div class="row">
-              <div class="col-8">
+              <div class="col-10">
                 <input
                   type="search"
                   class="form-control"
@@ -45,18 +45,13 @@
                   class="form-control btn btn-primary shadow-sm"
                 />
               </div>
-              <div class="col-2" class="">
-                <input
-                  type="submit"
-                  value="Current"
-                  class="form-control btn btn-primary shadow-sm current"
-                />
+            
             </div>
           </form>
           <div class="row" id="main-info-block" >
             <div class="col-6" id="left-block">
               <h1 id="city"></h1>
-              <span>Last updated on <span id="date">Tuesday 00:00</span></span>
+              <span id="time">Last updated on <span id="date">Tuesday 00:00</span></span>
               <p id="description"></p>
               <p>
                   Humidity: <span class="rightBlockResults" id="humidity">15</span><span>%</span>
@@ -126,8 +121,8 @@
             </div>
           </div>
         </div>
+        <div id="bottom-header"><a href="https://github.com/ashcruzzz/ash-cruz-project-app" id="open-source">Open-source code</a><span> by Ashley Cruz</span> </div>
       </div>
-      <div id="bottom-header"><a href="https://github.com/ashcruzzz/ash-cruz-project-app">Open-source code</a><span> by Ashley Cruz</span> </div>
     </div>
 
     <script src="src/index.js"></script>

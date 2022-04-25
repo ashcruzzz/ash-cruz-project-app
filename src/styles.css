@@ -1,12 +1,5 @@
 body {
-  background: linear-gradient(
-    88deg,
-    #fcec86,
-    #ffa66a,
-    #d1c4ae,
-    #6bbebb,
-    #42a19d
-  );
+  background: linear-gradient(88deg, #f2e4dc, #d9bca3, #f7c036);
   background-size: 1000% 1000%;
   animation: gradient 45s ease infinite;
   height: 100vh;
@@ -28,17 +21,20 @@ h1 {
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
+  color: #565902;
 }
 h4 {
   font-weight: 300;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  color: #565902;
 }
 p {
   font-weight: bold;
   font-size: 15pt;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  color: #565902;
 }
 span {
   text-align: center;
@@ -69,7 +65,9 @@ span {
   border-color: grey;
 }
 .card {
-  border-width: 2px;
+  background: #fff8ed;
+  border-color: #f2921d;
+  border-width: 5px;
   margin: 25px;
   padding: 15px;
   border-radius: 15px;
@@ -146,9 +144,10 @@ span {
   font-style: italic;
 }
 #bottom-header {
-  font-size: 1rem;
-  margin: 0px 250px;
+  text-align: center;
+  display: block;
   font-family: "Raleway", sans-serif;
+  font-size: 20px;
   font-weight: 300;
 }
 #left-block {
@@ -156,4 +155,10 @@ span {
 }
 #date {
   display: inline;
+}
+#open-source {
+  color: black;
+}
+#time {
+  color: #4c6473;
 }
