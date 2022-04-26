@@ -21,6 +21,28 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tues"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2" id="daily-forecast">
+                <p id="day-name">${day}</p>
+                <div class="card" id="future-forecast">
+                  <span id="weather-forecast-temperature-max">70°</span>
+                  <span id="weather-forecast-temperature-min">65°</span>
+                  <i class="fa-solid fa-cloud-showers-heavy icon"></i>
+                </div>
+              </div>
+            `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -87,4 +109,5 @@ fahrenheit.addEventListener("click", fahrenheitChange);
 let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", celsiusChange);
 
+displayForecast();
 search("Las Vegas");
