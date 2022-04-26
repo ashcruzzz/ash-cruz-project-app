@@ -46,6 +46,7 @@ span {
 .container {
   display: block;
   max-width: 1000px;
+  border-width: 5px;
 }
 .row {
   padding: 15px;
@@ -78,6 +79,8 @@ span {
 .icon {
   padding: 10px;
   font-size: 20pt;
+  text-align: center;
+  color: #565902;
 }
 .current {
   background-color: #42a19d;
@@ -92,7 +95,7 @@ span {
   display: inline;
 }
 .weather-temperature .active {
-  color: black;
+  color: #565902;
   cursor: default;
   text-decoration: none;
 }
@@ -102,6 +105,7 @@ span {
 .temperature {
   font-size: 75px;
   text-align: center;
+  color: #4d6574;
 }
 .units {
   font-size: 15px;
@@ -161,4 +165,30 @@ span {
 }
 #time {
   color: #4c6473;
+}
+#future-forecast {
+  border-width: 2px;
+  color: #4d6574;
+  margin: 7px;
+  padding: 5px;
+  text-align: center;
+  display: block;
+}
+#daily-forecast {
+  padding: 0px;
+}
+#day-name {
+  text-align: center;
+  margin: 0px;
+  font-size: 18px;
+}
+#weather-forecast-temperature-max {
+  color: #4d6574;
+  font-weight: 600;
+  display: inline;
+}
+#weather-forecast-temperature-min {
+  color: #728896;
+  font-weight: 200;
+  display: inline;
 }
