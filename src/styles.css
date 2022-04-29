@@ -42,7 +42,9 @@ span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
-
+img {
+  box-shadow: 50px;
+}
 .container {
   display: block;
   max-width: 1000px;
@@ -169,6 +171,7 @@ span {
 #future-forecast {
   border-width: 2px;
   color: #4d6574;
+  background-color: #efe1ce;
   margin: 7px;
   padding: 5px;
   text-align: center;
@@ -191,4 +194,14 @@ span {
   color: #728896;
   font-weight: 200;
   display: inline;
+}
+#search-button {
+  background-color: #4d6574;
+  border-color: #4d6574;
+}
+#city-input {
+  background-color: #edf1f4;
+  border-color: #4d6574;
+  border-width: 2px;
+  color: #565903;
 }
